@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="QuizActivity">
+    tools:context="bd.sm.geoquizk.CheatActivity">
 
     <TextView
         android:id="@+id/question_text_view"
@@ -35,31 +35,34 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_button" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="24dp"
         android:orientation="horizontal">
-        <ImageButton
+        <Button
             android:id="@+id/previous_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="24dp"
-            android:minWidth="55dp"
-            android:minHeight="55dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/arrow_left"/>
+            android:text="@string/previous_button"
+            android:drawableStart="@drawable/arrow_left"
+            android:drawablePadding="4dp"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="24dp"
-            android:minWidth="55dp"
-            android:minHeight="55dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/arrow_right"/>
+            android:text="@string/next_button"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="4dp"/>
     </LinearLayout>
 
 </LinearLayout>
